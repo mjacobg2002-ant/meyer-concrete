@@ -154,16 +154,15 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 /* ---------- Header ---------- */
 .site-header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  background: transparent;
-  border-bottom: 1px solid transparent;
-  transition: border-color .3s var(--ease), background .3s var(--ease), box-shadow .3s var(--ease), backdrop-filter .3s var(--ease);
-}
-.site-header[data-scrolled] {
-  background: rgba(30,30,30,.96);
+  background: rgba(255,255,255,.94);
   backdrop-filter: saturate(140%) blur(12px);
   -webkit-backdrop-filter: saturate(140%) blur(12px);
-  border-bottom-color: rgba(255,255,255,.1);
-  box-shadow: 0 6px 24px -18px rgba(0,0,0,.7);
+  border-bottom: 1px solid var(--line);
+  transition: border-color .3s var(--ease), background .3s var(--ease), box-shadow .3s var(--ease);
+}
+.site-header[data-scrolled] {
+  background: rgba(255,255,255,.98);
+  box-shadow: 0 6px 24px -18px rgba(0,0,0,.35);
 }
 .header__inner {
   display: flex; align-items: center; gap: 24px;
@@ -174,7 +173,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .nav { display: flex; align-items: center; gap: clamp(14px, 1.8vw, 30px); margin-left: auto; }
 .nav a {
   font-family: var(--font-display); font-weight: 600; font-size: .92rem;
-  color: var(--off-white); position: relative; padding: 6px 0; white-space: nowrap;
+  color: var(--ink); position: relative; padding: 6px 0; white-space: nowrap;
 }
 .nav a::after {
   content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 0;
@@ -184,17 +183,17 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .header__actions { display: flex; align-items: center; gap: 16px; }
 .header__phone {
   display: inline-flex; align-items: center; gap: 7px;
-  font-family: var(--font-display); font-weight: 700; font-size: .92rem; color: var(--off-white);
+  font-family: var(--font-display); font-weight: 700; font-size: .92rem; color: var(--ink);
 }
 .header__phone span { white-space: nowrap; }
 .header__cta { white-space: nowrap; }
-.header__phone svg { color: var(--accent); }
-.header__phone:hover { color: var(--accent); }
+.header__phone svg { color: var(--accent-deep); }
+.header__phone:hover { color: var(--accent-deep); }
 
 /* menu toggle (mobile) */
 .menu-toggle {
   display: none; width: 46px; height: 46px; margin-left: auto;
-  background: var(--accent); border: none; border-radius: var(--radius);
+  background: var(--graphite); border: none; border-radius: var(--radius);
   flex-direction: column; align-items: center; justify-content: center; gap: 5px;
 }
 .menu-toggle span { display: block; width: 20px; height: 2px; background: var(--off-white); transition: transform .25s var(--ease), opacity .2s var(--ease); }
