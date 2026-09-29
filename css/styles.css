@@ -137,9 +137,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 /* ---------- Logo ---------- */
 .logo { display: inline-flex; align-items: center; gap: 13px; }
-.logo__mark { flex: none; height: 64px; width: auto; display: block; color: var(--graphite);
-  background: #fff; border-radius: 7px; padding: 7px 12px; box-shadow: 0 4px 16px -6px rgba(0,0,0,.4); }
-.site-header[data-scrolled] .logo__mark { height: 52px; transition: height .3s var(--ease); }
+.logo__mark { flex: none; height: 58px; width: auto; display: block; }
+.site-header[data-scrolled] .logo__mark { height: 48px; transition: height .3s var(--ease); }
 .logo__word { display: flex; flex-direction: column; line-height: 1.05; }
 .logo__word-main {
   font-family: var(--font-display); font-weight: 800; font-size: 1.16rem;
