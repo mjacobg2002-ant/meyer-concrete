@@ -43,8 +43,8 @@ assets/video/         # hero background video + poster
 ```
 
 ## Design
-**Slate-blue on charcoal** palette drawn from the company's own site color (`#1A5D81`,
-brightened to `#1A7FAE` for UI). Dark, transparent header (goes solid on scroll); the
+**Monochrome concrete** palette (near-black + concrete grays) matching the logo — black
+CTAs, steel-gray accents, no color. Dark, transparent header (goes solid on scroll); the
 black-on-white Meyer logo sits on a white chip so it stays legible over the video and the
 solid nav. Archivo + Inter typography.
 

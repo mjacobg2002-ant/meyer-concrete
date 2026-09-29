@@ -1,27 +1,27 @@
 /* =====================================================================
    Meyer Concrete LLC — Homepage
    Design system: concrete flatwork × decorative × editorial
-   Brand: slate-blue on charcoal (from site) — clean & professional
+   Brand: monochrome concrete (black + grays) — matches the logo
    ===================================================================== */
 
 /* ---------- Design tokens ---------- */
 :root {
-  /* palette — Meyer brand: slate-blue accent on charcoal */
-  --graphite:      #1c2733;   /* charcoal blue-gray (dark sections / header) */
-  --charcoal:      #26333f;   /* charcoal 2 */
-  --slate:         #4a5866;   /* slate */
-  --concrete:      #7e8b98;   /* muted slate */
-  --concrete-2:    #b3bec8;   /* light slate */
-  --paper:         #eef1f3;   /* light cool gray */
-  --off-white:     #f6f8f9;
+  /* palette — Meyer brand: monochrome concrete (black + grays), matching the logo */
+  --graphite:      #242424;   /* neutral near-black (dark sections / header / CTAs) */
+  --charcoal:      #313131;   /* charcoal 2 */
+  --slate:         #585d61;   /* slate gray */
+  --concrete:      #868b8f;   /* concrete gray */
+  --concrete-2:    #bcc0c3;   /* light concrete gray */
+  --paper:         #ededed;   /* light gray */
+  --off-white:     #f7f7f7;
   --white:         #ffffff;
-  --accent:        #1a7fae;   /* slate-blue (brightened from site #1A5D81) */
-  --accent-deep:   #135d81;   /* deep slate-blue (site brand) */
+  --accent:        #6f777c;   /* steel gray (on-dark accents / underlines) */
+  --accent-deep:   #464b4f;   /* dark steel (eyebrow text / links on light) */
 
-  --ink:           #1f2a33;   /* dark slate headings */
-  --ink-soft:      #55626c;
-  --line:          #dde3e7;   /* hairline */
-  --line-dark:     #30404c;
+  --ink:           #242424;   /* near-black headings */
+  --ink-soft:      #585d61;
+  --line:          #e2e2e2;   /* hairline */
+  --line-dark:     #3a3a3a;
 
   /* logo contexts */
   --logo-mark-bg:  var(--graphite);
@@ -85,7 +85,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   color: var(--accent-deep);
   margin: 0 0 1.1rem;
 }
-.eyebrow--light { color: var(--accent); }
+.eyebrow--light { color: var(--concrete-2); }
 
 .section-title {
   font-weight: 800;
@@ -125,8 +125,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .btn:hover { transform: translateY(-2px); }
 .btn:active { transform: translateY(0); }
-.btn--primary { --btn-bg: var(--accent); --btn-fg: #ffffff; --btn-bd: var(--accent); }
-.btn--primary:hover { --btn-bg: var(--accent-deep); --btn-bd: var(--accent-deep); box-shadow: 0 12px 26px -12px rgba(26,127,174,.6); }
+.btn--primary { --btn-bg: var(--graphite); --btn-fg: #ffffff; --btn-bd: var(--graphite); }
+.btn--primary:hover { --btn-bg: #000000; --btn-bd: #000000; box-shadow: 0 12px 26px -12px rgba(0,0,0,.5); }
 .btn--outline { --btn-bg: transparent; --btn-fg: var(--ink); --btn-bd: var(--ink); }
 .btn--outline:hover { --btn-bg: var(--ink); --btn-fg: var(--off-white); }
 .btn--outline-light { --btn-fg: var(--off-white); --btn-bd: rgba(245,243,239,.5); }
@@ -160,7 +160,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   transition: border-color .3s var(--ease), background .3s var(--ease), box-shadow .3s var(--ease), backdrop-filter .3s var(--ease);
 }
 .site-header[data-scrolled] {
-  background: rgba(24,29,33,.96);
+  background: rgba(30,30,30,.96);
   backdrop-filter: saturate(140%) blur(12px);
   -webkit-backdrop-filter: saturate(140%) blur(12px);
   border-bottom-color: rgba(255,255,255,.1);
@@ -234,13 +234,13 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .hero__inner { position: relative; z-index: 1; padding-block: clamp(128px, 14vw, 208px) clamp(80px, 9vw, 140px); }
 .hero__content { max-width: 60ch; }
-.hero .eyebrow { color: var(--accent); }
+.hero .eyebrow { color: var(--concrete-2); }
 .hero__title {
   font-weight: 900; font-size: clamp(2.9rem, 7vw, 5.4rem); color: var(--white);
   margin: .2em 0 .5em; letter-spacing: -.03em;
   text-shadow: 0 2px 30px rgba(0,0,0,.4);
 }
-.hero__title-accent { color: var(--accent); }
+.hero__title-accent { color: var(--concrete-2); }
 .hero__lede { font-size: clamp(1.05rem, 1.5vw, 1.28rem); color: rgba(247,248,246,.92); max-width: 48ch; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 14px; margin: 2rem 0 1.8rem; }
 .hero__phone { display: inline-flex; flex-direction: column; }
@@ -326,8 +326,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .svc--accent .svc__title { color: var(--off-white); }
 .svc--accent p { color: var(--concrete-2); }
 .svc--accent .svc__num, .svc--accent .svc__link { color: var(--accent); }
-.svc--cta { background: var(--accent); color: #ffffff; justify-content: center; }
-.section--alt .svc--cta { background: var(--accent); }
+.svc--cta { background: var(--graphite); color: #ffffff; justify-content: center; }
+.section--alt .svc--cta { background: var(--graphite); }
 .svc--cta:hover { background: var(--accent-deep); }
 .svc--cta .svc__title { color: #ffffff; }
 .svc--cta p { color: rgba(255,255,255,.86); }
