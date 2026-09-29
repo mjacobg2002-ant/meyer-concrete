@@ -154,14 +154,14 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 /* ---------- Header ---------- */
 .site-header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  background: rgba(255,255,255,.55);
+  background: rgba(255,255,255,.34);
   backdrop-filter: saturate(150%) blur(16px);
   -webkit-backdrop-filter: saturate(150%) blur(16px);
-  border-bottom: 1px solid rgba(255,255,255,.35);
+  border-bottom: 1px solid rgba(255,255,255,.25);
   transition: border-color .3s var(--ease), background .3s var(--ease), box-shadow .3s var(--ease);
 }
 .site-header[data-scrolled] {
-  background: rgba(255,255,255,.80);
+  background: rgba(255,255,255,.62);
   border-bottom-color: var(--line);
   box-shadow: 0 6px 24px -18px rgba(0,0,0,.35);
 }
